@@ -7,15 +7,44 @@
 :root {
     --text: blueviolet;
     --background: yellow;
+    --bodbackground: pink;
 }
 
 h1 {
     color: var(--text);
+    font-size: 300%
+}
+
+h2 {
     font-size: xx-large;
 }
 
-header {
+.header {
+    display: block;
     background-color: var(--background);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.header a {
+    font-size: larger;
+}
+
+aside {
+    flex: 30%;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+section{
+    flex: 70%;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+main {
+    flex: 100%;
+    background-color: var(--bodbackground);
 }
 
 header, footer, #contact-me {
@@ -27,11 +56,18 @@ header, footer, #contact-me {
     top: 0;
 }
 
-footer #contact-me {
-    background-color: var(--background);
+.footer #contact-me {
+    background-color: black;
     color: var(--text);
 }
 
-header nav {
-    margin: 7px 0;
+
+p {
+    color:midnightblue;
+}
+
+article {
+    border: 1px solid black;
+    padding: 5px;
+    justify-content: space-between;
 }
