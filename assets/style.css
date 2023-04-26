@@ -31,9 +31,8 @@ h2 {
 }
 
 aside {
-    flex: 30%;
     padding: 20px;
-    flex-wrap: wrap;
+    text-align: center;
 }
 
 section{
@@ -56,19 +55,43 @@ header, footer, #contact-me {
     top: 0;
 }
 
-.footer #contact-me {
-    background-color: black;
+.contact-me {
+    background-color: magenta;
     color: var(--text);
+    text-align: center;
 }
 
 
 p {
     color:midnightblue;
+    margin: 7;
+}
+
+.portfolio {
+    flex: 1;
+    background-color: var(--bodbackground);
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
 }
 
 article {
-    width: fit-content;
-    border: 1px solid black;
-    margin: 5px;
-    justify-content: space-between;
+    color: var(--bodbackground);
+    outline: 2px dashed grey;
+    outline-offset: -2px;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    margin: 6px;
+}
+
+img {
+    box-shadow: 10px 10px 5px purple;
+}
+
+@media screen and (min-width: 768px) {
+    .portfolio {
+        flex: 0 0 50%
+    }
 }
